@@ -60,6 +60,10 @@ function game(){
     for (let i = 1; i <=5 ; i++) {
         console.log(`Round ${i}`);
         let playerSelection = getPlayerSelection();
+        if(playerSelection.toLowerCase()!=="rock" && playerSelection.toLowerCase()!=="paper" && playerSelection.toLowerCase()!=="scissors"){
+            console.log(`User entered ${playerSelection} as input which is not correct. Skipping this round.`)
+            continue;
+        }
         let computerSelection = getComputerChoice();
         console.log(`Your choice : ${playerSelection[0].toUpperCase() + playerSelection.substring(1).toLowerCase()}`);
         console.log(`Computer's choice : ${computerSelection}`);
