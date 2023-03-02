@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+header,footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: gray;
+}
+.main{
+    display: flex;
+    height: 250px;
+    width: auto;
+    justify-content: center;
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: aquamarine;
+}
+
+.instruction{
+    margin: 10px;
+    margin-top: 0px;
+    flex: 0.25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    background-color: aquamarine;
+    padding: 10px;
+    gap: 10px;
+}
+
+.button{
+    display: flex;
+    background-color: blueviolet;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.score{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: chartreuse;
+    padding: 10px;
+    gap: 10px;
+}
+
+.scoreHeader{
+    display: flex;
+    flex: 1.5 ;
+    background-color: brown;
+    justify-content: center;
+    align-items: center;
+}
+
+.humanScore{
+    display: flex;
+    flex: 1;
+    background-color: chartreuse;
+    gap: 10px;
+}
+
+.computerScore{
+    display: flex;
+    flex: 1;
+    background-color: chartreuse;
+    gap: 10px;
+}
+
+.humanScore .name,.humanScore .scoreCount{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    background-color: cadetblue;
+}
+
+.computerScore .name,.computerScore .scoreCount{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    background-color: violet;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    background-color: chocolate;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+.winner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 150px;
+}
+
+.reset{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color:gold;
+}
