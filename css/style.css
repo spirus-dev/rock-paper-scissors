@@ -120,3 +120,19 @@ header,footer{
     height: 100px;
     background-color:gold;
 }
+
+.round{
+    display: flex;
+    height: 100px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button,.reset{
+    transition: transform 0.1s ease-out;
+}
+
+.button:active,.reset:active{
+    transform: scale(0.75);
+}
